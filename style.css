@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    font-size: 30px;
+}
+.links{
+    width: 13vw;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30px;
+}
+.heading1{
+    font-size: 60px;
+    font-weight: 600;
+    padding: 10px 0;
+    /* border: 1px solid red; */
+}
+.description{
+    font-size: 20px;
+    padding: 10px 0;
+    margin: 20px 0;
+    /* border: 1px solid red; */
+}
+.btn1{
+    /* border: 1px solid red; */
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 15px 50px;
+    border-radius: 30px;
+}
+.divider{
+    width: 64px;
+    height: 6px;
+    border-radius: 10px;
+    background: black;
+    display: block;
+}
+.container{
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
+.navbar{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo-section{
+    padding-left: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar .logo-section p{
+    font-size: 15px;
+}
+.navbar .navigation{
+    width: 35vw;
+    font-size: 25px;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bodyContainer{
+    padding: 0 100px;
+    /* border: 1px solid red; */
+}
+.home{
+    margin: 100px 400px 100px 10px;
+}
+.projects{
+    margin: 50px 10px;
+}
+.projects .project-cards{
+    margin: 0 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.projects .project-cards .card{
+    margin: 50px 0;
+    /* border: 1px solid red; */
+    width: 26vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projects .project-cards .card img{
+    width: 100%;
+}
+.projects .project-cards .card .card-heading{
+    font-size: 35px;
+}
+.card-divider{
+    width: 60px;
+    height: 3px;
+    border-radius: 10px;
+    background: black;
+    display: block;
+    margin: 10px 0;
+}
+.projects .project-cards .card .des{
+    padding: 10px 0;
+    width: 300px;
+}
+.projects .project-cards .card .des .card-des{
+    font-size: 18px;
+}
+.projects .project-cards .card .des .stack{
+    font-size: 17px;
+    margin-top: 10px;
+}
+.projects .project-cards .card .des .stack ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.projects .project-cards .card .btn2{
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.projects .project-cards .card button{
+    border: 1px solid red;
+    padding: 8px;
+    border-radius: 18px;
+    font-size: 18px;
+}
+.technologies{
+    margin: 40px 0;
+}
+.technologies .tech-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.technologies .tech-section .tech{
+    width: 200px;
+    text-align: center;
+}
+.technologies .tech-section .tech .techname{
+    font-size: 25px;
+    font-weight: 600;
+}
+.aboutme{
+    margin: 40px 0;
+}
+.aboutme .timeline{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.aboutme .timeline .time{
+    width: 200px;
+}
+.aboutme .timeline .time .year{
+    font-size: 23px;
+    font-weight: 600;
+}
+.achievements{
+    margin: 40px 0;
+}
+.achievements .cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.achievements .cards .card{
+    border: 1px solid red;
+    width: 230px;
+    height: 150px;
+    padding: 20px;
+    border-radius: 15px;
+}
+.achievements .cards .card .card-head{
+    font-size: 30px;
+    font-weight: 600;
+}
+.achievements .cards .card .card-des{
+    font-size: 20px;
+}
+.contacts{
+    margin: 40px 0;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contacts .contact .con-head{
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.contacts .contact .con-des{
+    font-size: 20px;
+    font-weight: 600;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
