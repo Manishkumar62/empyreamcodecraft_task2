@@ -9,31 +9,31 @@
     <title>MyPortfolio</title>
 </head>
 <body>
+    <div class="gradient-background"></div> 
     <div class="container">
         <div class="navbar">
-            <div class="logo-section">
-                <div class="logo"><i class="fa-solid fa-laptop-code"></i></div>
-                <p>Portfolio</p>
+            <div class="logo-section"> 
+                <div class="logo"><a href="#home"><i class="fa-solid fa-laptop-code"></i><p>Portfolio</p></a></div>
             </div>
             <div class="navigation">
-                <div class="link"><a href="">Projects</a></div>
-                <div class="link"><a href="">Technologies</a></div>
-                <div class="link"><a href="">About</a></div>
+                <div class="link"><a href="#projects">Projects</a></div>
+                <div class="link"><a href="#technologies">Technologies</a></div>
+                <div class="link"><a href="#aboutme">About</a></div>
             </div>
             <div class="links">
-                <div class="logo"><i class="fa-brands fa-github"></i></div>
-                <div class="logo"><i class="fa-brands fa-linkedin"></i></i></div>
-                <div class="logo"><i class="fa-brands fa-instagram"></i></div>
+                <div class="logo"><a href="https://github.com/Manishkumar62" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+                <div class="logo"><a href="https://www.linkedin.com/in/manish-vishwakarma-009bb5208/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
+                <div class="logo"><a href="https://www.instagram.com/manish.v_62/" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
             </div>
         </div>
         <div class="bodyContainer">
-            <div class="home">
+            <div class="home" id="home">
                 <div class="heading1">Welcome to my personal portfolio</div>
                 <div class="description"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, consectetur in vero obcaecati deserunt possimus ad quas ullam culpa minus suscipit. Mollitia cupiditate labore non neque vero quasi dolor quis.</p></div>
-                <button class="btn1">Learn More</button>
+                <button class="btn1"><a href="#">Learn More</a></button>
             </div>
             <div class="divider"></div>
-            <div class="projects">
+            <div class="projects" id="projects">
                 <div class="heading1">Projects</div>
                 <div class="project-cards">
                     <div class="card">
@@ -55,8 +55,8 @@
                             </div>
                         </div>
                         <div class="btn2">
-                            <button>Code</button>
-                            <button>Source</button>
+                            <button><a href="#">Code</a></button>
+                            <button><a href="#">Source</a></button>
                         </div>
                     </div>
                     <div class="card">
@@ -78,15 +78,15 @@
                             </div>
                         </div>
                         <div class="btn2">
-                            <button>Code</button>
-                            <button>Source</button>
+                            <button><a href="#">Code</a></button>
+                            <button><a href="#">Source</a></button>
                         </div>
                     </div>
                 </div>
-                <button class="btn1">More</button>
+                <button class="btn1"><a href="#">More Projects</a></button>
             </div>
             <div class="divider"></div>
-            <div class="technologies">
+            <div class="technologies" id="technologies">
                 <div class="heading1">Technologies</div>
                 <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quo inventore non impedit error eos id debitis molestias maiores veniam.</div>
                 <div class="tech-section">
@@ -105,10 +105,15 @@
                         <div class="techname">DataBase</div>
                         <div class="techdes"><p>Experience with MongoDB, MySql</p></div>
                     </div>
+                    <div class="tech">
+                        <div class="logo"><i class="fa-solid fa-laptop-file"></i></div>
+                        <div class="techname">Prog. Lang.</div>
+                        <div class="techdes"><p>Experience with C++, Java</p></div>
+                    </div>
                 </div>
             </div>
             <div class="divider"></div>
-            <div class="aboutme">
+            <div class="aboutme" id="aboutme">
                 <div class="heading1">About Me</div>
                 <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ullam quisquam quia vero quas sequi dolore voluptas repudiandae placeat, optio, laudantium omnis aut. Ut, velit. Sed molestiae explicabo temporibus necessitatibus.</div>
                 <div class="timeline">
@@ -156,23 +161,24 @@
             <div class="contacts">
                 <div class="contact">
                     <div class="con-head">CALL</div>
-                    <div class="con-des">0000000000</div>
+                    <div class="con-des">+91 8452915724</div>
                 </div>
                 <div class="contact">
                     <div class="con-head">EMAIL</div>
-                    <div class="con-des">contact@gmail.com</div>
+                    <div class="con-des">vishwamanish62@gmail.com</div>
                 </div>
             </div>
-            <hr>
+            <div class="footer-line"></div>
             <div class="footer">
-                <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, dolorum.</div>
+                <div class="description">Created By <span>Mr. Manishkumar Vishwakarma</span> | All Rights Reserved.</div>
                 <div class="links">
-                    <div class="logo"><i class="fa-brands fa-github"></i></div>
-                    <div class="logo"><i class="fa-brands fa-linkedin"></i></i></div>
-                    <div class="logo"><i class="fa-brands fa-instagram"></i></div>
+                    <div class="logo"><a href="https://github.com/Manishkumar62" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+                    <div class="logo"><a href="https://www.linkedin.com/in/manish-vishwakarma-009bb5208/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
+                    <div class="logo"><a href="https://www.instagram.com/manish.v_62/" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

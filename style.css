@@ -5,14 +5,59 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
+    outline: none;
+    border:none;
+    text-transform: capitalize;
+    
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 10rem;
 }
 body{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.logo{
+.gradient-background{
+    height: 100%;
+    width: 100%;
+    background: white;
+    position: fixed;
+    top:0; left: 0;
+    z-index: -1;
+    overflow:hidden;
+}
+.gradient-background .animated-box{
+    position: absolute;
+    background:rgba(201, 143, 143, 0.2);
+    display: block;
+    pointer-events: none;
+    border-radius: .5rem;
+    animation: animate 3s linear infinite;
+}
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform:scale(0) translateY(-200%) rotate(0deg);
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform:scale(1) translateY(-500%) rotate(360deg);
+    }
+}
+.logo a{
     font-size: 30px;
+    color: black;
+}
+.logo a:hover{
+    color: rgb(221, 194, 194);
 }
 .links{
     width: 13vw;
@@ -34,12 +79,20 @@ body{
     margin: 20px 0;
     /* border: 1px solid red; */
 }
-.btn1{
-    /* border: 1px solid red; */
-    font-size: 20px;
+.btn1 a{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: .2s linear;
+    font-size: 15px;
     margin: 10px 0;
-    padding: 15px 50px;
+    padding: 10px 25px;
     border-radius: 30px;
+}
+.btn1:hover a{
+    letter-spacing: .1rem;
+    background-color: white;
+    color: black;
 }
 .divider{
     width: 64px;
@@ -53,7 +106,12 @@ body{
     margin-right: 8vw;
 }
 .navbar{
+    overflow: hidden;
+    background: white;
     height: 10vh;
+    position: fixed;
+    top: 0;
+    width: 84%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -61,9 +119,6 @@ body{
 .navbar .logo-section{
     padding-left: 10px;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .navbar .logo-section p{
     font-size: 15px;
@@ -76,11 +131,17 @@ body{
     align-items: center;
     justify-content: space-between;
 }
+.link a{
+    color: black;
+}
+.link a:hover{
+    color: rgb(221, 194, 194);
+}
 .bodyContainer{
     padding: 0 100px;
-    /* border: 1px solid red; */
 }
 .home{
+    padding-top: 10vh;
     margin: 100px 400px 100px 10px;
 }
 .projects{
@@ -140,11 +201,18 @@ body{
     align-items: center;
     justify-content: space-around;
 }
-.projects .project-cards .card button{
-    border: 1px solid red;
-    padding: 8px;
+.projects .project-cards .card button a{
+    padding: 8px 15px;
     border-radius: 18px;
     font-size: 18px;
+    background-color: black;
+    color: white;
+    transition: .2s linear;
+}
+.projects .project-cards .card button:hover a{
+    background-color: white;
+    color: black;
+    letter-spacing: .1rem;
 }
 .technologies{
     margin: 40px 0;
@@ -157,6 +225,9 @@ body{
 .technologies .tech-section .tech{
     width: 200px;
     text-align: center;
+}
+.technologies .tech-section .tech .logo{
+    font-size: 30px;
 }
 .technologies .tech-section .tech .techname{
     font-size: 25px;
@@ -215,8 +286,16 @@ body{
     font-size: 20px;
     font-weight: 600;
 }
+.footer-line{
+    height: 1px;
+    width: 100%;
+    background-color: black;
+}
 .footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.footer .description span{
+    font-weight: 600;
 }
