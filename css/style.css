@@ -107,8 +107,8 @@ body{
     height: 10vh;
     position: fixed;
     top: 0;
-    margin-left: 8vw;
-    width: 84%;
+    padding: 0 8vw;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -148,7 +148,7 @@ body{
     position: fixed;
     height: 10vw;
     width: 10vw;
-    background: url(./images/clock.png) center no-repeat;
+    background: url(../images/clock.png) center no-repeat;
     background-size: 120%;
 }
 #hour,#minute,#second{
